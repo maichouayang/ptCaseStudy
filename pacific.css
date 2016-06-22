@@ -9,7 +9,7 @@ body {
 header {
   background-color: #000033;
   color: #FFFFFF;
-  background-image: url(sunset.jpg);
+  background-image: url(images/sunset.jpg);
   background-position: right;
   background-repeat: no-repeat;
   height: 60px;
@@ -22,6 +22,9 @@ nav {
   font-weight: bold;
   text-align: center;
   padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 nav a {
@@ -31,7 +34,7 @@ nav a {
 h2 {
   color: #3399CC;
   text-shadow: 1px 1px 1px #CCCCCC;
-  font-family: Georgia, Times New Roman, serif;
+  font-family: Georgia, "Times New Roman", serif;
 }
 
 dt {
@@ -46,22 +49,23 @@ dt {
 h1 {
   margin-bottom: 0;
   margin-top: 0;
-  font-family: Georgia, Times New Roman, serif;
+  font-family: Georgia, "Times New Roman", serif;
 }
 
 h3 {
-  font-family: Georgia, Times New Roman, serif;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #3399CC;
 }
 
 ul {
-  list-style-image: url(marker.gif);
+  list-style-image: url(images/marker.gif);
 }
 
 footer {
   font-size: 75%;
   font-style: italic;
   text-align: center;
-  font-family: Georgia, Times New Roman, serif;
+  font-family: Georgia, "Times New Roman", serif;
   padding: 20px;
 }
 
@@ -89,21 +93,21 @@ main {
 
 #homehero {
   height: 300px;
-  background-image: url(coasthero.jpg);
+  background-image: url(images/coasthero.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 #yurthero {
   height: 300px;
-  background-image: url(yurthero.jpg);
+  background-image: url(images/yurthero.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 #trailhero {
   height: 300px;
-  background-image: url(trailhero.jpg);
+  background-image: url(images/trailhero.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
