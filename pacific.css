@@ -31,16 +31,24 @@ nav a {
   text-decoration: none;
 }
 
-nav a:link { color: #000033;}
+nav a:link {
+  color: #000033;
+}
 
-nav a:visited { color: #344873; }
+nav a:visited {
+  color: #344873;
+}
 
-nav a:hover { color: #FFFFFF; }
+nav a:hover {
+  color: #FFFFFF;
+}
 
-nav ul { list-style-type: none;
-margin: 0;
-padding-left: 0; 
-font-size: 1.2em; }
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  font-size: 1.2em;
+}
 
 h2 {
   color: #3399CC;
@@ -66,7 +74,6 @@ h3 {
 
 main ul {
   list-style-image: url(images/marker.gif);
-  
 }
 
 footer {
@@ -127,3 +134,123 @@ main {
   margin-left: 190px;
 }
 
+header,
+main,
+nav,
+footer,
+figure,
+figcaption,
+aside,
+section,
+article {
+  display: block;
+}
+
+#mobile {
+  display: block;
+}
+
+#desktop {
+  display: inline;
+}
+
+@media only screen and (max-width: 64em) {
+  body {
+    margin: 0;
+    background-color: #FFFFFF;
+  }
+  #wrapper {
+    min-width: 0;
+    width: auto;
+    box-shadow: none;
+  }
+  main {
+    margin-left: 0;
+  }
+  nav {
+    float: none;
+    width: auto;
+    text-align: center;
+    padding: 0.5em;
+  }
+  nav li {
+    display: inline;
+    padding-bottom: 0.25em;
+    padding-top: 0.25em;
+    padding-right: 0.75em;
+    padding-left: 0.75em;
+  }
+  #homehero {
+    margin-left: 0;
+    height: 200px;
+  }
+  #yurthero {
+    margin-left: 0;
+    height: 200px;
+  }
+  #trailhero {
+    margin-left: 0;
+    height: 200px;
+  }
+  footer {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  header {
+    padding-top: 1em;
+  }
+  main {
+    padding-bottom: 0.1em;
+    padding-top: 0.1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 90%;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  nav {
+    padding: 0;
+  }
+  nav li {
+    display: block;
+    margin: 0;
+    border-bottom: 2px #330000;
+  }
+  nav a {
+    display: block;
+  }
+  #homehero {
+    background-image: none;
+    height: 0;
+  }
+  #yurthero {
+    background-image: none;
+    height: 0;
+  }
+  #trailhero {
+    background-image: none;
+    height: 0;
+  }
+  #mobile {
+    display: inline;
+  }
+  #desktop {
+    display: none;
+  }
+}
+
+table { border: 1px solid #3399CC;
+width: 80%;
+border-spacing: 0; }
+
+td, th { padding: 5px; 
+border: 1px solid #3399CC; }
+
+td { text-align: center; }
+
+.text { text-align: left;}
+
+tr:nth-of-type(odd) { background-color: #F5FAFC; }
