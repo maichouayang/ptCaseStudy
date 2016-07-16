@@ -29,6 +29,7 @@ nav {
 
 nav a {
   text-decoration: none;
+  transition: color 3s ease-out;
 }
 
 nav a:link {
@@ -108,6 +109,7 @@ main {
   display: block;
   background-color: #FFFFFF;
   margin-left: 190px;
+  min-height: 300px;
 }
 
 #homehero {
@@ -134,6 +136,88 @@ main {
   margin-left: 190px;
 }
 
+
+table { border: 1px solid #3399CC;
+width: 80%;
+border-spacing: 0; }
+
+td, th { padding: 5px; 
+border: 1px solid #3399CC; }
+
+td { text-align: center; }
+
+.text { text-align: left;}
+
+tr:nth-of-type(odd) { background-color: #F5FAFC; }
+
+label { float: left;
+display: block;
+text-align: right;
+width: 120px;
+padding-right: 1em;}
+
+input { display: block;
+margin-bottom: 20px;}
+
+textarea { display: block;
+margin-bottom: 20px; }
+
+input[type="submit"] {margin-left: 130px;}
+
+video, embed { float: right; padding-left: 20px; }
+
+ 
+#gallery {
+    position: relative;
+    height: 200px;
+    text-align:left;
+  color: #242424; }
+
+figure {
+      position: absolute;
+      left: 280px;
+      text-align: center;
+      opacity: .25;
+      width: 200;
+      height: 150px; 
+    }
+
+#gallery ul {
+      width: 300px;
+      list-style-type: none;
+    }
+
+ #gallery li {
+      display: inline;
+    float:left;
+    padding: 10px; }
+
+ #gallary img {
+      border-style: none;
+    }
+
+ #gallery a {
+      text-decoration: none;
+      color: #000000;
+      font-style: italic;
+    }
+
+ #gallery span {
+      position: absolute;
+      left: -1000px;
+      opacity: 0;
+      transition: opacity 3s ease-in-out;
+    }
+
+#gallery a:hover span {
+      position: absolute;
+      top: 16px;
+      left: 320px;
+      text-align: center;
+      opacity: 1; 
+}
+
+
 header,
 main,
 nav,
@@ -146,8 +230,9 @@ article {
   display: block;
 }
 
+
 #mobile {
-  display: block;
+  display: none;
 }
 
 #desktop {
@@ -240,17 +325,9 @@ article {
   #desktop {
     display: none;
   }
+  label { float: none;
+  text-align: left; }
+  input[type="submit"] {margin-left: 0;}
 }
 
-table { border: 1px solid #3399CC;
-width: 80%;
-border-spacing: 0; }
 
-td, th { padding: 5px; 
-border: 1px solid #3399CC; }
-
-td { text-align: center; }
-
-.text { text-align: left;}
-
-tr:nth-of-type(odd) { background-color: #F5FAFC; }
